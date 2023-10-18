@@ -16,6 +16,25 @@ class LibraryTest {
     @Test fun fizzbuzzToTwelve() {
         assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZ", fizzbuzz(1..12))
     }
+    @Test fun fizzbuzzToFiftyHundred() {
+        assertEquals("BUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZFIZZBUZZFIZZFIZZBUZZ", fizzbuzz(50..100))
+    }
+
+    @Test fun fizzbuzzToTwentyOne() {
+        assertEquals("FIZZBUZZFIZZDOH!FIZZBUZZFIZZDOH!FIZZBUZZFIZZBUZZFIZZDOH!", fizzbuzz2(1..21))
+    }
+
+    @Test fun fizzbuzzToThirtyFive() {
+        assertEquals("FIZZBUZZFIZZDOH!FIZZBUZZFIZZDOH!FIZZBUZZFIZZBUZZFIZZDOH!FIZZBUZZFIZZDOH!FIZZBUZZFIZZBUZZDOH!", fizzbuzz2(1..35))
+    }
+
+    @Test fun testFizzBuzz_1To15() {
+        assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZ", fizzbuzz3(1..15))
+    }
+
+    @Test fun testFizzBuzz_1To12() {
+        assertEquals("FIZZBUZZFIZZFIZZBUZZFIZZ", fizzbuzz3(1..12))
+    }
 
     @Test fun r1Test() {
         assertEquals(">>> FOO: {BAR}", r1())
